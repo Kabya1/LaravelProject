@@ -1,0 +1,95 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: angry
+  steps:
+  - intent: irritated
+  - action: utter_nonsense
+
+- story: ask_about_orunodoi
+  steps:
+  - intent: ask_about_orunodoi
+  - action: utter_about_orunodoi
+
+- story: ask_orunodoi_launch_date
+  steps:
+  - intent: orunodoi_launch_date
+  - action: utter_orunodoi_launch_date
+
+- story: ask_orunodoi_objective
+  steps:
+  - intent: orunodoi_objective
+  - action: utter_orunodoi_objective
+
+- story: ask_orunodoi_beneficiaries
+  steps:
+  - intent: orunodoi_beneficiaries
+  - action: utter_orunodoi_beneficiaries
+
+- story: ask_orunodoi_financial_assistance
+  steps:
+  - intent: orunodoi_financial_assistance
+  - action: utter_orunodoi_financial_assistance
+
+- story: ask_orunodoi_funds_transfer
+  steps:
+  - intent: orunodoi_funds_transfer
+  - action: utter_orunodoi_funds_transfer
+
+- story: ask_orunodoi_payment_timing
+  steps:
+  - intent: orunodoi_payment_timing
+  - action: utter_orunodoi_payment_timing
+
+- story: ask_orunodoi_selection_process
+  steps:
+  - intent: orunodoi_selection_process
+  - action: utter_orunodoi_selection_process
+
+- story: ask_orunodoi_eligibility
+  steps:
+  - intent: orunodoi_eligibility
+  - action: utter_orunodoi_eligibility
+
+- story: ask_orunodoi_application
+  steps:
+  - intent: orunodoi_application
+  - action: utter_orunodoi_application
+
+- story: ask_orunodoi_selection_list
+  steps:
+  - intent: orunodoi_selection_list
+  - action: utter_orunodoi_selection_list
+
+- story: ask_orunodoi_utilization
+  steps:
+  - intent: orunodoi_utilization
+  - action: utter_orunodoi_utilization

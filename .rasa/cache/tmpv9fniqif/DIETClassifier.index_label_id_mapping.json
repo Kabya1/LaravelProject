@@ -1,0 +1,22 @@
+{
+  "0": "affirm",
+  "1": "ask_about_orunodoi",
+  "2": "bot_challenge",
+  "3": "deny",
+  "4": "goodbye",
+  "5": "greet",
+  "6": "irritated",
+  "7": "mood_great",
+  "8": "mood_unhappy",
+  "9": "orunodoi_application",
+  "10": "orunodoi_beneficiaries",
+  "11": "orunodoi_eligibility",
+  "12": "orunodoi_financial_assistance",
+  "13": "orunodoi_funds_transfer",
+  "14": "orunodoi_launch_date",
+  "15": "orunodoi_objective",
+  "16": "orunodoi_payment_timing",
+  "17": "orunodoi_selection_list",
+  "18": "orunodoi_selection_process",
+  "19": "orunodoi_utilization"
+}

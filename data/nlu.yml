@@ -1,0 +1,180 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: irritated
+  examples: |
+    - shut up
+
+- intent: ask_about_orunodoi
+  examples: |
+    - What is the Orunodoi Scheme?
+    - Can you tell me about Orunodoi?
+    - Explain the Orunodoi scheme.
+    - I want to know about Arunodoi.
+
+- intent: orunodoi_launch_date
+  examples: |
+    - When was the Orunodoi Scheme launched?
+    - What is the launch date of the Orunodoi scheme?
+    - When did Orunodoi start?
+    - In which year did the Assam government start this scheme?
+
+- intent: orunodoi_objective
+  examples: |
+    - What is the objective of the Orunodoi Scheme?
+    - What is the purpose of Arunodoi?
+    - Why was the Orunodoi Scheme introduced?
+    - What does the Assam government aim to achieve with this scheme?
+
+- intent: orunodoi_beneficiaries
+  examples: |
+    - Who are the beneficiaries of Orunodoi?
+    - Who can apply for the Orunodoi Scheme?
+    - Who is eligible for the scheme?
+    - How many people benefit from this scheme?
+
+- intent: orunodoi_financial_assistance
+  examples: |
+    - How much financial assistance is given under Orunodoi?
+    - What is the monetary benefit under Orunodoi?
+    - How much money do people get under this scheme?
+    - How much financial help does the government provide through Orunodoi?
+
+- intent: orunodoi_funds_transfer
+  examples: |
+    - How is the Orunodoi money transferred?
+    - How do beneficiaries receive the funds?
+    - How do I get the money from the Orunodoi scheme?
+    - Is the money given directly to the bank?
+
+- intent: orunodoi_payment_timing
+  examples: |
+    - When do beneficiaries receive the Orunodoi payment?
+    - What is the payment date for Orunodoi?
+    - When is the Orunodoi amount credited?
+    - Do people receive the Orunodoi benefit every month?
+
+- intent: orunodoi_selection_process
+  examples: |
+    - How are beneficiaries selected for Orunodoi?
+    - What is the process for selecting people for Orunodoi?
+    - Who decides who gets the Orunodoi benefit?
+    - How does the government choose eligible families?
+
+- intent: orunodoi_eligibility
+  examples: |
+    - What are the eligibility criteria for Orunodoi?
+    - Who can apply for the Orunodoi scheme?
+    - What are the conditions for getting the benefit?
+    - Who is eligible and who is not?
+
+- intent: orunodoi_application
+  examples: |
+    - How can I apply for Orunodoi?
+    - What is the application process for Orunodoi?
+    - How do I register for the scheme?
+    - Where can I submit my application?
+
+- intent: orunodoi_selection_list
+  examples: |
+    - Where can I check the Orunodoi selection list?
+    - How do I know if I got selected for Orunodoi?
+    - When was the Orunodoi selection list released?
+    - How can I see the list of beneficiaries?
+
+- intent: orunodoi_utilization
+  examples: |
+    - How is the Rs. 1000 spent under Orunodoi?
+    - What is the breakup of the Orunodoi financial aid?
+    - How much money is given for medicines and food?
+    - What is the purpose of the Rs. 1000 given every month?
+

@@ -1,0 +1,90 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - irritated
+  - ask_about_orunodoi
+  - orunodoi_launch_date
+  - orunodoi_objective
+  - orunodoi_beneficiaries
+  - orunodoi_financial_assistance
+  - orunodoi_funds_transfer
+  - orunodoi_payment_timing
+  - orunodoi_selection_process
+  - orunodoi_eligibility
+  - orunodoi_application
+  - orunodoi_selection_list
+  - orunodoi_utilization
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_nonsense:
+  - text: "I am angry"
+
+  utter_about_orunodoi:
+  - text: "The Orunodoi Scheme is a welfare initiative by the Assam Government, launched on October 2, 2020, to provide financial assistance to poor households."
+
+  utter_orunodoi_launch_date:
+  - text: "The Orunodoi Scheme was launched on October 2, 2020."
+
+  utter_orunodoi_objective:
+  - text: "The objective of the Orunodoi Scheme is to provide financial assistance to economically weaker families, focusing on women empowerment."
+
+  utter_orunodoi_beneficiaries:
+  - text: "The scheme benefits 19.10 lakh families in Assam, with women being the primary recipients of the financial aid."
+
+  utter_orunodoi_financial_assistance:
+  - text: "Beneficiaries receive Rs. 1000 per month through Direct Benefit Transfer (DBT)."
+
+  utter_orunodoi_funds_transfer:
+  - text: "The money is directly transferred to the bank account of the nominated woman in the household."
+
+  utter_orunodoi_payment_timing:
+  - text: "The financial assistance is provided on the 1st day of every month."
+
+  utter_orunodoi_selection_process:
+  - text: "Beneficiaries are selected at the Gaon Panchayat, VCDC, or Urban Local Body level based on eligibility criteria."
+
+  utter_orunodoi_eligibility:
+  - text: "Only poor households meeting specific criteria set by the government are eligible."
+
+  utter_orunodoi_application:
+  - text: "Applicants can apply through their local administrative body."
+
+  utter_orunodoi_selection_list:
+  - text: "The selection list is released by the Assam Government and can be checked online."
+
+  utter_orunodoi_utilization:
+  - text: "The Rs. 1000 is allocated for medicines, food, and other essential household needs."
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+

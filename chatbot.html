@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Chatbot</title>
+</head>
+
+<body>
+
+    <div class="chat-container">
+        <div class="chat-header">Chatbot</div>
+        <div class="chat-body" id="chatBody">
+            <div class="chat-message bot-message">Hello! How can I assist you?</div>
+        </div>
+        <div class="chat-footer">
+            <input type="text" id="userInput" placeholder="Type a message..." onkeypress="handleKeyPress(event)">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script>
+        function sendMessage() {
+            let userInput = document.getElementById("userInput");
+            let chatBody = document.getElementById("chatBody");
+
+            if (userInput.value.trim() !== "") {
+                // Display user message
+                let userMessage = document.createElement("div");
+                userMessage.className = "chat-message user-message";
+                userMessage.innerText = userInput.value;
+                chatBody.appendChild(userMessage);
+                chatBody.scrollTop = chatBody.scrollHeight;
+
+                let userText = userInput.value;
+                userInput.value = ""; // Clear input field
+
+                // Send AJAX request to Rasa server
+                let xhr = new XMLHttpRequest();
+                xhr.open("POST", "http://localhost:5005/webhooks/rest/webhook", true);
+                xhr.setRequestHeader("Content-Type", "application/json");
+
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState === 4 && xhr.status === 200) {
+                        let response = JSON.parse(xhr.responseText);
+                        response.forEach((message) => {
+                            let botMessage = document.createElement("div");
+                            botMessage.className = "chat-message bot-message";
+                            botMessage.innerText = message.text;
+                            chatBody.appendChild(botMessage);
+                        });
+
+                        chatBody.scrollTop = chatBody.scrollHeight;
+                    }
+                };
+
+                let data = JSON.stringify({ message: userText });
+                xhr.send(data);
+            }
+        }
+
+        function handleKeyPress(event) {
+            if (event.key === "Enter") {
+                sendMessage();
+            }
+        }
+    </script>
+</body>
+</html>
